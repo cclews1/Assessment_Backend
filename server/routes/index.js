@@ -1,5 +1,12 @@
-const sampleRoute = require('./sampleRoute');
+// Requires
+const express = require('express');
+const router = express.Router();
+// Controllers
+const controllers = require('../controllers')
 
-module.exports = (app) => {
-    app.use('/api', sampleRoute)
-};
+router.get('/posts', controllers.getAllPosts);
+router.post('/posts', controllers.createPost);
+router.post('/like', controllers.addLike)
+router.post('/unlike', controllers.revokeLike)
+router.delete('/remove', controllers.deletePost)
+module.exports = router

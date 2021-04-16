@@ -5,6 +5,7 @@
   "engines": {
     "node": "12.13.1"
   },
+  "proxy": "localhost:8000",
   "main": "index.js",
   "repository": "https://github.com/sean-connor/yellowstone",
   "author": "Sean Connor <connorseanp@gmail.com>",
