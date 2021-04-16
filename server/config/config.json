@@ -5,7 +5,8 @@
     "username": "postgres",
     "password": "postgres",
     "database": "finback670_assessment",
-    "hostname": "localhost"
+    "hostname": "localhost",
+    "operatorsAliases": false
   },
   "test": {
 
